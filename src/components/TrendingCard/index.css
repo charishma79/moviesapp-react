@@ -1,0 +1,23 @@
+.movie-item {
+  margin: 0px;
+}
+
+.poster-img {
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  margin: 0px 2px;
+}
+
+@media screen and (max-width: 576px) {
+  .poster-img {
+    height: 100px;
+    width: 140px;
+    margin: 0px 5px;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  background-color: transparent;
+}

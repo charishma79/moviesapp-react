@@ -1,0 +1,101 @@
+.movies-bg-container {
+  background-color: #21201f;
+  min-height: 150vh;
+  width: 100vw;
+}
+
+.loader-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.movie-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 125px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-failure-container {
+    padding-top: 105px;
+  }
+}
+
+.movie-fail-img {
+  height: 276px;
+  width: 375px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-fail-img {
+    height: 172px;
+    width: 232px;
+  }
+}
+
+.failure-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .failure-text {
+    font-size: 16px;
+  }
+}
+
+.try-again-btn {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #171f46;
+  width: 110px;
+  height: 38px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.popular-container {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 50px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .popular-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+  }
+}
+
+.popular-list-item {
+  margin: 8px;
+}
+
+.popular-img {
+  height: 170px;
+  width: 255px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .popular-img {
+    height: 100px;
+    width: 90px;
+  }
+}

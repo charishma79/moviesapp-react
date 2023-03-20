@@ -1,0 +1,55 @@
+.poster-details {
+  padding-left: 105px;
+  padding-top: 52px;
+}
+
+@media screen and (max-width: 767px) {
+  .poster-details {
+    padding-left: 50px;
+    padding-top: 35px;
+  }
+}
+
+.name {
+  color: #ffffff;
+  font-family: 'HK Grotesk';
+  font-size: 65px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .name {
+    font-size: 45px;
+  }
+}
+
+.content {
+  font-family: 'HK Grotesk';
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 0px;
+  color: #ffffff;
+  width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    font-size: 15px;
+    width: 85%;
+    line-height: 26px;
+  }
+}
+
+.play-btn {
+  width: 90px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: 'HK Grotesk';
+  font-weight: 600;
+  font-size: 14px;
+  color: #171f46;
+  margin-top: 25px;
+}

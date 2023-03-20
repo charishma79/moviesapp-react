@@ -1,0 +1,51 @@
+.fail-container {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 20vh;
+  width: 100%;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.failure-logo {
+  height: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .fail-container {
+    min-height: 10vh;
+  }
+}
+
+.failure-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.try-btn {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #171f46;
+  width: 110px;
+  height: 38px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+}
+
+.trending-container {
+  width: 100%;
+  padding-left: 0px;
+  list-style-type: none;
+}

@@ -1,0 +1,338 @@
+.movies-bg-container {
+  background-color: #21201f;
+  min-height: 150vh;
+  width: 100vw;
+}
+
+.movie-top-container {
+  min-height: 75vh;
+  width: 100vw;
+  padding-bottom: 50px;
+}
+
+.loader-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.movie-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 125px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-failure-container {
+    padding-top: 105px;
+  }
+}
+
+.movie-fail-img {
+  height: 276px;
+  width: 375px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-fail-img {
+    height: 172px;
+    width: 232px;
+  }
+}
+
+.failure-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .failure-text {
+    font-size: 16px;
+  }
+}
+
+.try-again-btn {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #171f46;
+  width: 110px;
+  height: 38px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-details-card {
+  padding-left: 134px;
+  padding-right: 134px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-details-card {
+    padding-left: 32px;
+    padding-top: 90px;
+  }
+}
+
+.movie-title {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 63px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.release-info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.duration {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .duration {
+    font-size: 16px;
+  }
+}
+
+.adult {
+  padding: 2px 12px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .adult {
+    font-size: 16px;
+  }
+}
+
+.not-adult {
+  padding: 3px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  color: #ffffff;
+  font-family: Roboto;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .not-adult {
+    font-size: 16px;
+  }
+}
+
+.release-date {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .release-date {
+    font-size: 16px;
+  }
+}
+
+.movie-overview {
+  margin-top: 5px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  width: 632px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-overview {
+    font-size: 16px;
+    width: 296px;
+  }
+}
+
+.play-button {
+  width: 90px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: 'HK Grotesk';
+  font-weight: 600;
+  font-size: 14px;
+  color: #171f46;
+  margin-top: 5px;
+
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .play-button {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+.genre-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.movie-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 165px;
+  padding-top: 55px;
+  padding-right: 165px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-card-container {
+    padding-left: 34px;
+    padding-top: 50px;
+    padding-right: 34px;
+  }
+}
+
+.genre-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.genre-title {
+  font-family: 'lucida-bright';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .genre-title {
+    font-size: 16px;
+  }
+}
+
+.list-item {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .list-item {
+    font-size: 12px;
+  }
+}
+
+.rating-view-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.similar-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .similar-heading {
+    font-size: 20px;
+  }
+}
+
+.similar-movies-container {
+  padding-left: 165px;
+  padding-right: 165px;
+  margin-top: 42px;
+}
+
+@media screen and (max-width: 767px) {
+  .similar-movies-container {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+.similar-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.similar-movies-image {
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .similar-movies-image {
+    margin: 5px;
+  }
+}
+
+.more-img {
+  height: 170px;
+  width: 255px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .more-img {
+    height: 64px;
+    width: 90px;
+    border-radius: 8px;
+  }
+}
