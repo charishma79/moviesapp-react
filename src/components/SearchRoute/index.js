@@ -109,7 +109,8 @@ class SearchRoute extends Component {
   )
 
   getSearchPages = () => {
-    this.getSearchDetails()
+  const {searchInput}=this.state
+    this.getSearchDetails(searchInput)
   }
 
   renderSearchFailureView = () => (
