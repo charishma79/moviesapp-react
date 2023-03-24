@@ -33,6 +33,7 @@ class Header extends Component {
     if (searchInput !== '') {
       getSearchDetails(searchInput)
     }
+    // this.setState({searchInput: ''})
   }
 
   render() {
