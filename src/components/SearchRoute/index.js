@@ -24,13 +24,11 @@ class SearchRoute extends Component {
   state = {
     apiStatus: apiStatusConstants.initial,
     searchResultsList: [],
-    searchInput: '',
+    searchText: '',
   }
 
   getSearchDetails = async searchInput => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
-    console.log('fhef')
-
     const jwtToken = Cookies.get('jwt_token')
     const searchUrl = `https://apis.ccbp.in/movies-app/movies-search?search=${searchInput}`
     console.log(searchUrl)
@@ -54,10 +52,13 @@ class SearchRoute extends Component {
       this.setState({
         searchResultsList: updatedSearchData,
         apiStatus: apiStatusConstants.success,
-        searchInput,
+        searchText: searchInput,
       })
     } else {
-      this.setState({apiStatus: apiStatusConstants.failure})
+      this.setState({
+        apiStatus: apiStatusConstants.failure,
+        searchText: searchInput,
+      })
     }
   }
 
@@ -87,7 +88,8 @@ class SearchRoute extends Component {
   }
 
   renderNoSearchResultsView = () => {
-    const {searchInput} = this.state
+    const {searchText} = this.state
+    console.log(searchText)
     return (
       <div className="no-results-card">
         <img
@@ -96,7 +98,7 @@ class SearchRoute extends Component {
           className="no-movie-img"
         />
         <p className="no-results">
-          Your search for {searchInput} did not find any matches.
+          Your search for {searchText} did not find any matches.
         </p>
       </div>
     )
@@ -109,8 +111,8 @@ class SearchRoute extends Component {
   )
 
   getSearchPages = () => {
-  const {searchInput}=this.state
-    this.getSearchDetails(searchInput)
+    const {searchText} = this.state
+    this.getSearchDetails(searchText)
   }
 
   renderSearchFailureView = () => (
